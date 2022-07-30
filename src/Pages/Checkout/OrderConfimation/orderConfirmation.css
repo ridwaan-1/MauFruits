@@ -1,0 +1,36 @@
+.orderPlaced-icon, 
+.unsuccessful-icon {
+    font-size: 80px;
+}
+
+.orderPlaced-icon {
+    color: var(--green-color);
+}
+
+.unsuccessful-icon,
+.unsuccessful-text {
+    color: red;
+}
+
+.confirmation-text {
+    text-align: center;
+}
+
+.confirmation-text p {
+    margin: 10px 0;
+}
+
+.confirmation-text span {
+    font-weight: bold;
+}
+
+.confirmation-text h2 {
+    color: var(--green-color);
+}
+
+.message-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    outline: 2px solid var(--green-color)
+}

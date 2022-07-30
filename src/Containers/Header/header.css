@@ -1,0 +1,152 @@
+header {
+    width: 100%;
+    padding: 10px 5% 10px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: 75px;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+}
+
+.menuIcon {
+    width: 30px;
+}
+
+.menuIcon span {
+    display: block;
+    content: '';
+    background: var(--green-color);
+    height: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.openMenu span:nth-child(1) {
+    transform: translateY(10px) rotate(135deg);
+}
+
+.openMenu span:nth-child(3) {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+.openMenu span:nth-child(2) {
+    transform: scale(0);
+}
+
+header h1 {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+header ul p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 20px;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header ul p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: var(--green-color);
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+header ul p:hover {
+    color: var(--green-color);
+}
+
+header ul p:hover::after {
+    transform: scaleX(1);
+}
+
+.active {
+    color: var(--green-color);
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(1);
+    background: var(--green-color);
+}
+
+header .menuIcon {
+    display: none;
+    cursor: pointer;
+}
+
+.authUser {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.authUser-dropdown {
+    display: none;
+    width: 100px;
+    right: 0;   
+    font-size: 18px;
+    position: absolute;
+    background-color: #fff;
+    outline: 2px solid rgba(0,0,0,0.2);
+    border-radius: 10px 0 10px 10px;
+}
+
+.authUser-dropdown p {
+    padding: 10px 0;
+}
+
+.authUser:hover .authUser-dropdown{
+    display: block;
+}
+
+.userIcon {
+    font-size: 30px;
+}
+@media (max-width: 909px) {
+    header .menuIcon {
+        display: block;
+    }
+
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    header li {
+        display: block;
+        margin: 50px 0;
+    }
+
+    .show {
+        box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.4);
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    header h1 {
+        font-size: 25px;
+    }
+}

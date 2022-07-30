@@ -1,0 +1,35 @@
+button {
+    border: none;
+    font-size: var(--font-s);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.btn {
+    border: 2px solid var(--green-color);
+    color: #fff;
+    background: var(--green-color);
+}
+
+.btn-light {
+    color: var(--green-color);
+    background: #fff;
+    border: 2px solid var(--green-color);
+}
+
+.btn:hover {
+    color: black;
+}
+
+.btn-light:hover {
+    color: #fff;
+    background: var(--green-color);
+}
+
+@media screen and (max-width: 500px) {
+    .btn {
+        padding: 5px 10px;
+    }
+}

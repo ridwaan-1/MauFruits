@@ -1,0 +1,32 @@
+.cardSlider {
+    overflow-x: hidden;
+    margin: 60px 0;
+}
+
+.cardSlider-contents {
+    transition: all 0.5s;
+    gap: 20px;
+}
+
+.cardSlider-controls {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: var(--green-color);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.cardSlider-control {
+    width: 50px;
+    height: 25px;
+    color: white;
+}
+.cardSlider-control:hover {
+    color: black;
+}
+
+@media screen and (max-width:350px) {
+    .cardSlider-controls {
+        padding: 5px 0;
+    }
+}

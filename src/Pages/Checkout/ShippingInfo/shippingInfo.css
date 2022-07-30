@@ -1,0 +1,84 @@
+.shippingInfo, .cartInfo {
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.shippingInfo {
+    display: none;
+}
+
+.cartInfo {
+    display: none;
+}
+
+.cartInfo .itemUnvailableMsg {
+    color: rgb(255, 0, 0);
+}
+
+.shippingInfo .dropdown-title {
+    font-size: 16px;
+}
+
+.shippingInfo li {
+    margin: 5px 10px;
+}
+
+.new-address-billingForm {
+    color: var(--green-color);
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.new-address-billingForm:hover {
+    color: #000;
+}
+
+.addNewAddrForm {
+    min-width: 350px;
+}
+
+.shipping-option {
+    margin-top: 10px;
+}
+
+.shipping-option > p {
+    font-size: 20px;
+}
+.shipping-option > span {
+    font-size: 14px;
+    color: rgb(116, 111, 111);
+}
+
+.shipping-option-name {
+    font-weight: bold;
+}
+
+.shipping-option .cost {
+    font-weight: 300;
+    color: red;
+}
+    
+.cartInfo-items {
+    background: #fff; 
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px 5px;
+}
+
+@media screen and (max-width:760px) {
+    .billingInfo-container .info {
+        flex-direction: column-reverse;
+    }
+    .shippingForm {
+        width: min(100%, 500px);
+    }
+    .shippingInfo, .cartInfo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .shippingInfo, .cartInfo {
+        padding: 10px 5px;
+    }
+}

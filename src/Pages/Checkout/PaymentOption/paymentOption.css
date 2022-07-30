@@ -1,0 +1,56 @@
+.payment-options,
+.finalCart-summary {
+    width: 50%;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.payment-options {
+    display: none;
+}
+
+.finalCart-summary .orderSummary {
+    margin-bottom: 10px;
+}
+
+.payment-options ul p{
+    margin: 10px 20px;
+}
+
+.card-payment-form {
+    max-width: 400px;
+}
+
+.orderSummary p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.congratIcon {
+    font-size: 50px;
+    margin-right: 5px;
+    color: rgb(255, 0, 0);
+}
+
+.congratMsg {
+    background: var(--lightgreen-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width:760px) {
+    .payment-page > div {   
+        flex-direction: column;
+    }
+    .payment-options,
+    .finalCart-summary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .payment-options,
+    .finalCart-summary {
+        padding: 10px 5px;
+    }
+}

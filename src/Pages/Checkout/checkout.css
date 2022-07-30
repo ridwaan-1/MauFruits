@@ -1,0 +1,95 @@
+.shippingForm {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    outline: 2px solid var(--green-color)
+}
+
+.form-container > div {
+    background-color: #fff;
+    min-width: 100%;
+    transition: 0.5s;
+    position: relative;
+}
+
+.form-container {
+    overflow: hidden;
+}
+
+.open-shippingInfo .cartInfo, .open-shippingInfo .shippingInfo { display: block; }
+.open-paymentOption .payment-options { display: block; }
+.open-shippingInfo { transform: translateX(0); }
+.open-paymentOption { transform: translateX(-100%); }
+.open-orderConfirmation { transform: translateX(-200%); }
+
+.shippingInfo .username {
+    font-weight: bold;
+}
+
+.formBtn {
+    max-width: 200px;
+}
+
+.shippingInfo .addr,
+.shippingInfo .contactNum {
+    font-size: 16px;
+}
+
+.shippingInfo hr {
+    margin: 0 20px;
+}
+
+.payment-option {
+    background-color: var(--lightgreen-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.checkout-popup {
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 2px solid var(--green-color);
+    max-width: 500px;
+}
+
+.noItem-popup {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.unavailable-msg {
+    background-color: rgb(233, 81, 81);
+    outline: 2px solid rgb(233, 81, 81);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin: 10px 0 -10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: #fff;
+}
+
+.unavailable-msg button {
+    color: rgb(255, 0, 0);
+}
+
+.unavailable-msg button:hover {
+    background-color: rgb(255, 187, 187);
+    color: #000;
+}
+
+.unavailable-msg + .item {
+    outline: 2px solid rgb(233, 81, 81);
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width:650px) {
+    .shippingForm {
+        width: 100%;
+    }
+}

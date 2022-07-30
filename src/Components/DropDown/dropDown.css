@@ -1,0 +1,25 @@
+.dropdown {
+    cursor: pointer;
+    background: #fff;
+}
+
+.dropdown-title {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: 1px solid;
+    margin-top: 20px;
+}
+
+.dropdown:hover .dropdown-title {
+    outline: 1px solid var(--green-color);
+}
+
+.dropdown-options {
+    background: var(--lightgreen-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    transition: height 1s;
+    height: 0;
+}   

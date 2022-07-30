@@ -1,0 +1,24 @@
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--green-color);
+    text-align: center;
+    padding: 20px 10px;
+    height: 180px;
+}
+
+footer span:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 25px;
+    margin: 0 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-icon:hover {
+    color: #000;
+    transform: scale(1.5);
+}
