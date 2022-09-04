@@ -33,7 +33,7 @@ const Cart = (props) => {
                         grade={item.grade}
                     />
                 ))}
-                <Link to='/checkout'>
+                <Link to='/Maufruits/checkout'>
                     <Button width={true} light={false}>
                         Proceed to checkout
                     </Button>
