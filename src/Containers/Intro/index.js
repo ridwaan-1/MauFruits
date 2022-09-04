@@ -16,7 +16,7 @@ const Intro = () => {
                         We have all the healthier snacks you need to meet your fruit 
                         quota for the day.
                     </p>
-                    <Link to={'/market'}>
+                    <Link to={'/MauFruits/market'}>
                         <Button light={false}>Visit Market</Button>
                     </Link>
                 </div>

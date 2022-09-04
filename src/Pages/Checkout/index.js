@@ -12,6 +12,7 @@ import Button from '../../Components/Button';
 import { useNavigate } from 'react-router-dom';
 import { updateCart } from '../../ReduxStore/slices/cartSlice';
 import { serverUrl } from '../../Constants/serverUrl';
+
 const Checkout = () => {
     const dispatch = useDispatch()
     const { user:userInfo, cart } = useSelector(state => state);
@@ -41,7 +42,7 @@ const Checkout = () => {
     const navigateToAuthPage = (url) => {
         navigate(url, {
             state: {
-                redirectUrl: '/checkout'
+                redirectUrl: '/MauFruits/checkout'
             }
         })
     } 
@@ -85,7 +86,7 @@ const Checkout = () => {
             {(cart.totalItems===0) ? <PopUp>
                 <div className='noItem-popup'>
                     <p>Basket is empty.<br/>Please add item to your basket before checking out.</p>
-                    <Button onClick={() => navigateToAuthPage('/market')}>Ok</Button>
+                    <Button onClick={() => navigateToAuthPage('/MauFruits/market')}>Ok</Button>
                 </div>
             </PopUp> : 
             orderUnsuccessful ? <OrderConfirmation success={!orderUnsuccessful} /> :
@@ -97,7 +98,7 @@ const Checkout = () => {
                         <p className='m-top-10'>Benefits of creating an account:</p>
                         <p> - Access to some exclusive deals</p>
                         <p> - No need to input existing details for checkout</p>
-                        <Button onClick={() => navigateToAuthPage('/login')} width>Sign up</Button>
+                        <Button onClick={() => navigateToAuthPage('/MauFruits/login')} width>Sign up</Button>
                     </div>
                 </PopUp> :
                 <React.Fragment>

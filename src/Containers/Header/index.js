@@ -32,14 +32,14 @@ const Header = () => {
                 <h1>MauFruits</h1>
             </Link>
             <ul className={`${openMenu ? 'show' : ''}`}>
-                <Link to='/'>
-                    <li><p className={`${activeMenu==='/' ? 'active' : ''}`}>Home</p></li>
+                <Link to='/MauFruits/'>
+                    <li><p className={`${activeMenu==='/MauFruits/' ? 'active' : ''}`}>Home</p></li>
                 </Link>
-                <Link to='/market'>
-                    <li><p className={`${activeMenu==='/market' ? 'active' : ''}`}>Market</p></li>
+                <Link to='/MauFruits/market'>
+                    <li><p className={`${activeMenu==='/MauFruits/market' ? 'active' : ''}`}>Market</p></li>
                 </Link>
-                <Link to='/contact'>
-                    <li><p className={`${activeMenu==='/contact' ? 'active' : ''}`}>Contact</p></li>
+                <Link to='/MauFruits/contact'>
+                    <li><p className={`${activeMenu==='/MauFruits/contact' ? 'active' : ''}`}>Contact</p></li>
                 </Link>
             </ul>
 
@@ -48,13 +48,13 @@ const Header = () => {
                     <FaUserCircle className='userIcon green-text'/>
                     <p className='green-text'>{user.auth.name}</p>
                     <div className='authUser-dropdown'>
-                        <Link to='/addresses'>
+                        <Link to='/MauFruits/addresses'>
                             <p>Addresses</p>
                         </Link>
                         <p onClick={logoutHandler}>Log out</p>
                     </div>
                 </div> :
-                <Link to='/login'>
+                <Link to='/MauFruits/login'>
                     <Button light={false}>Sign up</Button>
                 </Link>
             }

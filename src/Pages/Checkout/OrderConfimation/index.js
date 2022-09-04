@@ -16,7 +16,7 @@ const SuccessfulMsg = (
             <p className='bold-text'>Feel free to contact us if you have any queries</p>
             <h2>MauFruits</h2>
         </div>
-        <Link to='/'>
+        <Link to='/MauFruits/'>
             <Button className='m-top-30'>Return to Home Page</Button>
         </Link>
     </React.Fragment>
@@ -31,7 +31,7 @@ const UnsuccessfulMsg = (
             <p className='bold-text'>Please try again.</p>
             <p>Please contact us if the problem persists.</p>
         </div>
-        <Link to='/'>
+        <Link to='/MauFruits/'>
             <Button className='m-top-30 btn-red'>Return to Home Page</Button>
         </Link>
     </React.Fragment>

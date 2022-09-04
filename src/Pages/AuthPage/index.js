@@ -49,7 +49,7 @@ const AuthPage = (props) => {
     const [userData, setUserData] = useState({});
     const params = useLocation();
 
-    const redirectUrl = params.state ? params.state.redirectUrl : '/';
+    const redirectUrl = params.state ? params.state.redirectUrl : '/MauFruits';
 
     const authHandler = (event) => {
         event.preventDefault();
@@ -95,8 +95,8 @@ const AuthPage = (props) => {
                     <button className='btn-light googleBtn flex center-v center-h'><FcGoogle /> Continue with google</button>
 
                     { props.signup ? 
-                    <p className='center-text'>Already have an account? <Link to='/login'><span onClick={setDefaultStates} className='pwd-txt'>SIGN IN</span></Link></p> :
-                    <p className='center-text'>Need an account? <Link to='/signup'><span onClick={setDefaultStates} className='pwd-txt'>SIGN UP</span></Link></p> }
+                    <p className='center-text'>Already have an account? <Link to='/MauFruits/login'><span onClick={setDefaultStates} className='pwd-txt'>SIGN IN</span></Link></p> :
+                    <p className='center-text'>Need an account? <Link to='/MauFruits/signup'><span onClick={setDefaultStates} className='pwd-txt'>SIGN UP</span></Link></p> }
                 </form>
             </main>
         </React.Fragment>

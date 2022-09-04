@@ -21,16 +21,16 @@ root.render(
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<App />}>
-            <Route path="market" element={<Market />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="login" element={<AuthPage />} />
-            <Route path="signup" element={<AuthPage signup />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="checkout-success" element={<OrderConfirmation success/>} />
-            <Route path="checkout-fail" element={<OrderConfirmation/>} />
-            <Route path="addresses" element={<Addresses />} />
+          <Route path="/MauFruits" element={<Home />} />
+          <Route path="/MauFruits" element={<App />}>
+            <Route path="/MauFruits/market" element={<Market />} />
+            <Route path="/MauFruits/contact" element={<Contact />} />
+            <Route path="/MauFruits/login" element={<AuthPage />} />
+            <Route path="/MauFruits/signup" element={<AuthPage signup />} />
+            <Route path="/MauFruits/checkout" element={<Checkout />} />
+            <Route path="/MauFruits/checkout-success" element={<OrderConfirmation success/>} />
+            <Route path="/MauFruits/checkout-fail" element={<OrderConfirmation/>} />
+            <Route path="/MauFruits/addresses" element={<Addresses />} />
           </Route>
         </Routes>
       </Suspense>
