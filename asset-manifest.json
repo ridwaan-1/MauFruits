@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/MauFruits/static/css/main.09d464ed.css",
-    "main.js": "/MauFruits/static/js/main.821afa3e.js",
+    "main.js": "/MauFruits/static/js/main.aed6d2bc.js",
     "static/css/272.98a5e89d.chunk.css": "/MauFruits/static/css/272.98a5e89d.chunk.css",
-    "static/js/272.3866bcc0.chunk.js": "/MauFruits/static/js/272.3866bcc0.chunk.js",
+    "static/js/272.f8b6b758.chunk.js": "/MauFruits/static/js/272.f8b6b758.chunk.js",
     "static/css/829.2de43dbc.chunk.css": "/MauFruits/static/css/829.2de43dbc.chunk.css",
-    "static/js/829.62614cfc.chunk.js": "/MauFruits/static/js/829.62614cfc.chunk.js",
+    "static/js/829.a8d3cc06.chunk.js": "/MauFruits/static/js/829.a8d3cc06.chunk.js",
     "static/css/249.24e8b265.chunk.css": "/MauFruits/static/css/249.24e8b265.chunk.css",
     "static/js/249.e014102a.chunk.js": "/MauFruits/static/js/249.e014102a.chunk.js",
     "static/css/513.8dfe7b8b.chunk.css": "/MauFruits/static/css/513.8dfe7b8b.chunk.css",
@@ -30,11 +30,11 @@
     "static/media/delivery.webp": "/MauFruits/static/media/delivery.1596cfe80ffd880bbc61.webp",
     "index.html": "/MauFruits/index.html",
     "main.09d464ed.css.map": "/MauFruits/static/css/main.09d464ed.css.map",
-    "main.821afa3e.js.map": "/MauFruits/static/js/main.821afa3e.js.map",
+    "main.aed6d2bc.js.map": "/MauFruits/static/js/main.aed6d2bc.js.map",
     "272.98a5e89d.chunk.css.map": "/MauFruits/static/css/272.98a5e89d.chunk.css.map",
-    "272.3866bcc0.chunk.js.map": "/MauFruits/static/js/272.3866bcc0.chunk.js.map",
+    "272.f8b6b758.chunk.js.map": "/MauFruits/static/js/272.f8b6b758.chunk.js.map",
     "829.2de43dbc.chunk.css.map": "/MauFruits/static/css/829.2de43dbc.chunk.css.map",
-    "829.62614cfc.chunk.js.map": "/MauFruits/static/js/829.62614cfc.chunk.js.map",
+    "829.a8d3cc06.chunk.js.map": "/MauFruits/static/js/829.a8d3cc06.chunk.js.map",
     "249.24e8b265.chunk.css.map": "/MauFruits/static/css/249.24e8b265.chunk.css.map",
     "249.e014102a.chunk.js.map": "/MauFruits/static/js/249.e014102a.chunk.js.map",
     "513.8dfe7b8b.chunk.css.map": "/MauFruits/static/css/513.8dfe7b8b.chunk.css.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.09d464ed.css",
-    "static/js/main.821afa3e.js"
+    "static/js/main.aed6d2bc.js"
   ]
 }
