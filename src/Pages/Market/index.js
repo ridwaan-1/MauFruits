@@ -12,10 +12,10 @@ import Error from '../../Components/Error';
 import { serverUrl } from '../../Constants/serverUrl';
 
 const getMaxItems = () => {
-    if (window.innerWidth > 1340) return 15;
-    if (window.innerWidth > 1140) return 12;
-    if (window.innerWidth > 740) return 9;
-    return 6;
+    if (window.innerWidth > 1340) return 15;  // DESKTOP
+    if (window.innerWidth > 1140) return 12;  // LAPTOP
+    if (window.innerWidth > 740) return 9;  // TABLET
+    return 6; // PHONE
 }
 const Market = () => {
     const [openFilterMenu, setOpenFilterMenu] = useState(false);
@@ -122,5 +122,5 @@ const Market = () => {
         </main>
     );
 }
- 
+
 export default Market;

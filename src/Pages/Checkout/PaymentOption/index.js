@@ -14,9 +14,7 @@ const BankTransfer = () => {
     return (
         <div className='payment-option'>
             <p>Bank transfer to our MCB account</p>
-            <p>Bank account: <span className='bold-text'>0009876782847</span> <br/>
-            Order Id: <span className='bold-text'>123234</span> <br/>
-            Total Price: <span className='bold-text'>Rs1230.50</span></p>
+            <p>Bank account: <span className='bold-text'>0009876782847</span></p>
             <p className='bold-text'>Note: Please specify the order id in the description field when transfering money.</p>
         </div>
     );

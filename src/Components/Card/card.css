@@ -74,17 +74,11 @@
     transform: translate(-50%, -50%);
 }
 
-/* .cardIcon-container:focus .card-validIcon {
-    background-color: var(--green-color);
-    opacity: 1;
+@media screen and (max-width: 1400px) {
+    .productCard {
+        min-width: 200px;
+    } 
 }
-
-.card-validIcon {
-    opacity: 1;
-} */
-
-
-
 
 @media screen and (min-width:460px) and (max-width:680px) {
     .productCard-name {
