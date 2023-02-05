@@ -1,1 +1,1 @@
-export const serverUrl = 'https://maufruits-api.herokuapp.com/api';
+export const serverUrl = 'https://maufruits.up.railway.app/api';
