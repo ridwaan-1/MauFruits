@@ -1,1 +1,1 @@
-export const serverUrl = 'https://maufruits.up.railway.app/api';
+export const serverUrl = 'https://maufruits.up.railway.app/api'; // Moving from heroku to railway
